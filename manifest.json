@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Under the Hood",
+    "version": "0.1.0",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "popup.js"
+            ],
+            "css": [
+                "popup.css"
+            ]
+        }
+    ]
+}
